@@ -56,18 +56,16 @@
           <div class="u-container-layout u-container-layout-1">
             <div class="u-black u-container-style u-post-details u-post-details-1">
               <div class="u-container-layout u-container-layout-2"><!--blog_post_metadata-->
-                <div class="u-blog-control u-metadata u-text-grey-30 u-metadata-1"><!--blog_post_metadata_date-->
-                  <span class="u-meta-date u-meta-icon"><!--blog_post_metadata_date_content-->{{post.posted_on}}<!--/blog_post_metadata_date_content--></span>
-                </div><!--/blog_post_metadata-->
+                
               </div>
-            </div><!--/blog_post--><!--/post_details-->
-            <h2 class="u-blog-control u-text u-text-1" style="font-size: 3vw;">
+            </div>
+            <h2 class="u-blog-control u-text u-text-1">
               <a class="u-post-header-link" href='{{post.title}}'>{{post.title}}</a>
             </h2>
-            <br>
-            <p class="u-align-justify u-text u-text-grey-90 u-text-2">
-              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="#" target="_blank">Written By {{post.name}}</a>
+            <p class="u-align-justify u-text u-text-grey-90 u-text-2"><a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="#" target="_blank">Written By {{post.name}}</a>
             </p>
+            <span class="u-align-justify u-text u-text-white-90 u-text-2">{{post.posted_on}}</span>
+            <p></p>
           </div>
         </div>
         {% endfor %}

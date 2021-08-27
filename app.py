@@ -100,7 +100,7 @@ def logged_in():
 def logout():
     if "username" in session:
         session.pop("username", None)
-        return render_template("base.html")
+        return render_template("base.html",log='/')
     else:
         return render_template('login.html')
 
